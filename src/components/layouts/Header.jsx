@@ -7,7 +7,7 @@ import { MdLogin } from "react-icons/md";
 export default function Header() {
     return (
         <header className="header main-container-parent">
-            <nav id="nav" className="navbar is-white main-container">
+            <nav id="nav" className="navbar is-light main-container">
                 <div className="navbar-brand">
                     <Link className="navbar-item" to={"/"}>
                         <img
@@ -15,7 +15,7 @@ export default function Header() {
                             alt="Welcome to Indian culture and Heritage"
                         />
                         <p className="navbar-name">
-                            Indian Culture and Heritage
+                            Indian Culture and Heritage✊
                         </p>
                     </Link>
                     <div

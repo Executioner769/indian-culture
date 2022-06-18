@@ -34,7 +34,7 @@ html {
 .navbar {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #d2d2d2;
 }
 
 .navbar-name {
