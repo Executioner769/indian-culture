@@ -47,3 +47,10 @@ html {
 .navbar-item {
     font-size: 1.2rem;
 }
+
+.hero-body {
+    /* import india.png from assets */
+    background: url("./assets/india.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

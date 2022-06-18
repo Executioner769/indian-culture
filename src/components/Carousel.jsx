@@ -5,9 +5,7 @@ export default function Carousel() {
         <div className="main-container">
             <section class="hero is-l is-fullheight-with-navbar">
                 <div className="hero-head"></div>
-                <div class="hero-body">
-                    <div class=""></div>
-                </div>
+                <div class="hero-body"></div>
                 <div className="hero-foot"></div>
             </section>
         </div>
