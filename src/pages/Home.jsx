@@ -1,13 +1,13 @@
 import React from "react";
 
 import Carousel from "../components/Carousel";
-import Catagories from "../components/Catagories";
+import Categories from "../components/Categories";
 
 export default function Home() {
     return (
         <main className="main-container-parent">
             <Carousel />
-            <Catagories />
+            <Categories />
         </main>
     );
 }

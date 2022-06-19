@@ -1,10 +1,17 @@
 import React from "react";
 import logo from "../../assets/logo.png";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { GoHome } from "react-icons/go";
-import { MdLogin } from "react-icons/md";
 
 export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick = () => {
+        const prevIsOpen = isOpen;
+        setIsOpen(!prevIsOpen);
+    };
+
     return (
         <header className="header main-container-parent">
             <nav id="nav" className="navbar is-light main-container">
@@ -19,8 +26,9 @@ export default function Header() {
                         </p>
                     </Link>
                     <div
-                        className="navbar-burger"
+                        className={`navbar-burger ${isOpen ? "is-active" : ""}`}
                         data-target="navbarExampleTransparentExample"
+                        onClick={handleClick}
                     >
                         <span></span>
                         <span></span>
@@ -30,7 +38,7 @@ export default function Header() {
 
                 <div
                     id="navbarExampleTransparentExample"
-                    className="navbar-menu"
+                    className={`navbar-menu ${isOpen ? "is-active" : ""}`}
                 >
                     <div className="navbar-start"></div>
 
@@ -38,10 +46,6 @@ export default function Header() {
                         <NavLink className="navbar-item" to="/">
                             <GoHome />
                             Home
-                        </NavLink>
-                        <NavLink className="navbar-item" to="/login">
-                            <MdLogin />
-                            Login
                         </NavLink>
                     </div>
                 </div>
